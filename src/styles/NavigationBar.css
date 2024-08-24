@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    min-height: 72px;
+    background-color: #ebe5f3;
+    z-index: 1;
+}
+
+.navbar .navbar-collapse {
+  justify-content: flex-end; /* Ensures the nav links are aligned to the right */
+}
