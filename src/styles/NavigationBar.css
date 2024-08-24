@@ -4,9 +4,26 @@
     align-content: center;
     position: fixed;
     width: 100%;
-    min-height: 72px;
-    background-color: #ebe5f3;
-    z-index: 1;
+    min-height: 80px;
+    background-color: lightblue;
+    z-index: 100;
+}
+
+.nav-link {
+  padding-right: 15px;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.navbar a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #070c3d;
+  padding-left: 10px;
+}
+
+.navbar span {
+  font-size: 25px;
 }
 
 .navbar .navbar-collapse {
