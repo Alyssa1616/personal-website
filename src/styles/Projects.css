@@ -3,6 +3,8 @@
     text-align: center;
     display: block;
     padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .projects-page h1 {
@@ -18,15 +20,27 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin-top: 20px;
-    margin: 30px;
-  }
+    margin: 20px auto;
+    width: calc(100% - 100px); /* Adjust to center the grid */
+    max-width: 1100px; /* Control the maximum width of the grid */
+    justify-content: center;
+}
   
   .project-card {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* padding: 20px; */
   }
+
+  .project-card p {
+    flex-grow: 1; /* Makes the paragraph take up remaining space */
+}
+
   .project-card h3, p, a {
     padding-left: 10px;
     padding-right: 10px;
@@ -45,6 +59,15 @@
     padding: 20px;
   }
   
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
   .github-link {
     display: inline-block;
     padding: 8px 15px;
@@ -53,17 +76,28 @@
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
-    margin-bottom: 8px;
-    margin-left: 8px;
-    margin-right: 10px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    align-self: flex-end; 
+    margin-bottom: 5px;
+    white-space: nowrap;
   }
   
   .github-link:hover {
-    background-color: #333; /* Slightly lighter on hover */
+    background-color: #575757; /* Slightly lighter on hover */
+    color: white;
   }
   
   .github-link:active {
     background-color: #181818; /* Even darker when active */
   }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack the columns */
+    }
+
+    .project-card {
+        min-width: unset; /* Remove min-width so the cards can resize properly */
+    }
+}
