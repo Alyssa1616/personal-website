@@ -2,7 +2,8 @@ import React from "react";
 import "./styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { NavigationBar, Projects } from "./components";
+import { NavigationBar} from "./components";
+import Projects from "./components/Projects/Projects"
 import About from "./components/About/About"
 
 function App() {

@@ -2,7 +2,7 @@
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin: 20px;
+    padding-top: 30px;
   }
   
   .button {
@@ -24,19 +24,19 @@
   }
   
   .email-button {
-    background-color: #6c757d;
+    background-color: #2b91ea;
     color: white;
   }
   
   .email-button:hover {
-    background-color: #565e64;
+    background-color: #2478c2;
   }
   
   .download-button {
-    background-color: #28a745;
+    background-color: #2831a7;
     color: white;
   }
   
   .download-button:hover {
-    background-color: #1e7e34;
+    background-color: #1a1f68;
   }
