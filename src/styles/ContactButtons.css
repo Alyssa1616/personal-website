@@ -2,41 +2,25 @@
     display: flex;
     gap: 15px;
     justify-content: center;
-    padding-top: 30px;
-  }
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
   
-  .button {
+.button {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .linkedin-button {
-    background-color: #0077b5;
+.linkedin-button, .email-button, .download-button {
+    background-color: rgb(123, 192, 215);
     color: white;
-  }
+}
   
-  .linkedin-button:hover {
-    background-color: #005582;
-  }
-  
-  .email-button {
-    background-color: #2b91ea;
-    color: white;
-  }
-  
-  .email-button:hover {
-    background-color: #2478c2;
-  }
-  
-  .download-button {
-    background-color: #2831a7;
-    color: white;
-  }
-  
-  .download-button:hover {
-    background-color: #1a1f68;
-  }
+.linkedin-button:hover, .email-button:hover, .download-button:hover  {
+    background-color: rgb(99, 155, 173);
+}

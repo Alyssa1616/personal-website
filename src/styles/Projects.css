@@ -1,4 +1,4 @@
-.projects-page{
+.projects-page {
     background-color: lightblue;
     text-align: center;
     display: block;
@@ -15,60 +15,71 @@
     align-items: center;
 }
   
-  .projects-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin-top: 20px;
     margin: 20px auto;
-    width: calc(100% - 100px); /* Adjust to center the grid */
-    max-width: 1100px; /* Control the maximum width of the grid */
+    width: calc(100% - 100px);
+    max-width: 1100px;
     justify-content: center;
 }
   
-  .project-card {
+.project-card {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
     height: 100%;
-    /* padding: 20px; */
-  }
-
-  .project-card p {
-    flex-grow: 1; /* Makes the paragraph take up remaining space */
 }
 
-  .project-card h3, p, a {
+.project-card h3, p, a {
     padding-left: 10px;
     padding-right: 10px;
-  }
-  .project-card h3 {
+}
+
+.project-card h3 {
     font-size: 20px;
     text-align: center;
-  }
-  .project-card p {
+}
+
+.project-card p {
+    margin-top: 0;
     font-size: 16px;
-  }
+    flex-grow: 0.5;
+    margin-bottom: auto; 
+}
+
+.project-card .skill-list {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.project-card .description {
+    flex-grow: 1;
+    padding-bottom: 10px;
+}
   
-  .project-image {
+.project-image {
     width: 100%;
     border-radius: 8px;
     padding: 20px;
   }
   
-  .button-container {
+.button-container {
     display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    gap: 10px; /* Space between buttons */
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
-  .github-link {
+.github-link {
     display: inline-block;
     padding: 8px 15px;
     background-color: #24292e;
@@ -83,21 +94,21 @@
     white-space: nowrap;
   }
   
-  .github-link:hover {
-    background-color: #575757; /* Slightly lighter on hover */
+.github-link:hover {
+    background-color: #575757;
     color: white;
-  }
+}
   
-  .github-link:active {
-    background-color: #181818; /* Even darker when active */
-  }
+.github-link:active {
+    background-color: #181818;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* Stack the columns */
+        grid-template-columns: 1fr;
     }
 
     .project-card {
-        min-width: unset; /* Remove min-width so the cards can resize properly */
+        min-width: unset;
     }
 }

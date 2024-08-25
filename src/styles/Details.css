@@ -1,20 +1,16 @@
 .details-page {
-    padding: 110px 50px;
+    padding: 90px 10px;
     margin: 90px;
     background-color: #f7f7f7;
-    /* margin-top: 72px; */
     border-radius: 10px;
 }
 
 .details-page h1 {
     font-size: 30px;
 }
-/* .details-page h2 {
-    font-weight: bold;
-    font-size: 20px;
-} */
 
 .details-page p {
     line-height: 1.8;
     font-size: 16px;
+    padding-bottom: 15px;
 }
