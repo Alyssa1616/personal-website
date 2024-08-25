@@ -3,7 +3,7 @@ import { reactIcon, pythonIcon, javascriptIcon, typescriptIcon, mobxIcon,
     mongodbIcon, htmlIcon, cssIcon, bootstrapIcon, javaIcon, cplusIcon,
     cIcon, swiftIcon, googleIcon, pandasIcon, pytorchIcon, firebaseIcon,
     gitIcon, flaskIcon, hfIcon, ApiIcon, TuneIcon, MicIcon, TextFieldsIcon,
-    MemoryIcon, CodeIcon, GraphicsIcon }
+    MemoryIcon, CodeIcon }
     from './skillsLogos';
 import LibrosaIcon from '../../assets/librosa.png';
 
