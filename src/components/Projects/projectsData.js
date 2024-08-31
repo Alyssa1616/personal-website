@@ -22,7 +22,6 @@ const projects = [
       description: "Working with Dr. Najoung Kim as a research assistant in the Dept. of Computer Science and the Dept. of Linguistics to analyze the ability of large language models to track state changes of discourse entities expressed in natural language.",
       skills: "Python | LLMs | PyTorch | Transformers | Pandas | Regex | High Performance Computing",
       imageUrl: image3,
-      githubLink: 'https://github.com/Alyssa1616/code-model-entity-tracking',
     },
     {
       title: 'Portfolio Website',
