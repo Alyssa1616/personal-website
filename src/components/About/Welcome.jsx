@@ -13,7 +13,7 @@ const Welcome = () => {
         <Col md={8} sm={12}>
           <h1>Alyssa Feinberg</h1>
           <p>
-            I'm a sophomore at Brown University studying Computer Science and Linguistics.
+            I'm a junior at Brown University studying Computer Science and Linguistics.
           </p>
         </Col>
       </Row>
