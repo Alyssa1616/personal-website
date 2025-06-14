@@ -1,4 +1,4 @@
-import { image1, image2, image3, image4, image5, image6 } from "../../assets/projects/projects"
+import { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10 } from "../../assets/projects/projects"
 
 const projects = [
     {
@@ -46,11 +46,30 @@ const projects = [
       webLink: "https://www.congressionalappchallenge.us/22-ma04/",
       githubLink: 'https://github.com/Alyssa1616/CommunAphasia'
     },
-    // {
-    //   title: 'Othello',
-    //   description: "",
-    //   imageUrl: image7
-    // },
+    {
+      title: 'Shell',
+      description: "Built a custom Unix shell in C that parses user input, executes built-in and external commands, handles input/output redirection, and manages foreground and background processes with terminal control. Implemented signal handling to ensure the shell ignores interruptions while correctly forwarding user signals to running child processes.",
+      skills: "C | Inter-process Communication | GDB",
+      imageUrl: image7,
+    },
+    {
+      title: 'Othello',
+      description: "Built the Othello game in Java using JavaFX, supporting human vs. human, human vs. AI, and AI vs. AI gameplay. Designed a recursive MiniMax algorithm with three intelligence levels and implemented a graphical interface with clickable moves, adjustable player types, and visible AI turn delays.",
+      skills: "Java | JavaFX | Adversarial Search",
+      imageUrl: image8
+    },
+    {
+     title: 'Blackjack',
+     description: "Implemented a tabular reinforcement learning solution to model Blackjack as a Markov decision process, leveraging Monte Carlo simulations, value iteration, and Q-learning to derive optimal playing strategies.",
+     skills: 'Python | Reinforcement Learning',
+     imageUrl: image9,
+    }, 
+    {
+     title: 'Answer Finder',
+     description: "Designed a question answering system that uses TF-IDF to rank and retrieve the most relevant documents and passages from a text corpus in response to user queries. Implemented functions for document loading, tokenization, inverse document frequency computation, and ranking to enable efficient retrieval of accurate answers.",
+     skills: 'Python | NLTK | Natural Language Processing',
+     imageUrl: image10,
+    },
   ];
 
   export default projects;
