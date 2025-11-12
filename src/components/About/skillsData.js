@@ -20,7 +20,9 @@ const skills = [
     { name: 'Java', icon: <Icon icon={javaIcon} /> },
     { name: 'C', icon: <Icon icon={cIcon} /> },
     { name: 'C++', icon: <Icon icon={cplusIcon} /> },
+    { name: 'Objective-C', icon: <div style={{ fontWeight: 'bold', fontSize: '1.2rem', color: '#007aff' }}>OC</div> },
     { name: 'Swift', icon: <Icon icon={swiftIcon} /> },
+    { name: 'SwiftUI', icon: <Icon icon="logos:swift" /> },
     { name: 'Flask', icon: <Icon icon={flaskIcon} /> },
     { name: 'REST APIs', icon: <ApiIcon style={{ fontSize: 20, color: '#007bff' }} /> },
     { name: 'Google APIs', icon: <Icon icon={googleIcon} /> },
@@ -35,6 +37,12 @@ const skills = [
     { name: 'Speech Recognition', icon: <MicIcon style={{ fontSize: 20, color: '#000000' }} /> },
     { name: 'OCR', icon: <TextFieldsIcon style={{ fontSize: 20, color: '#007bff' }} /> },
     { name: 'Git', icon: <Icon icon={gitIcon} /> },
+    { name: 'Node.js', icon: <Icon icon="logos:nodejs-icon" /> },
+    { name: 'Express.js', icon: <Icon icon="logos:express" /> },
+    { name: 'Docker', icon: <Icon icon="logos:docker-icon" /> },
+    { name: 'TensorFlow', icon: <Icon icon="logos:tensorflow" /> },
+    { name: 'NumPy', icon: <Icon icon="logos:numpy" /> },
+    { name: 'Xcode', icon: <Icon icon="logos:xcode" /> },
   ];
 
   export default skills;

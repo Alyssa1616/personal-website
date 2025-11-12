@@ -7,10 +7,10 @@ const Details = () => {
       <div className="details-page">
         <h1>About Me!</h1>
         <p>
-        I am currently an Associate Software Developer Intern at Google. I am working on security warning banners on the Gmail iOS app. </p>
-        <p> I am also a research assistant in Professor Andy van Dam’s Graphics Lab, developing AI-driven learning tools for Dash, a web-based application sponsored by Adobe for interacting with and analyzing multimedia documents.
-        I am also conducting research with Dr. Najoung Kim in Boston University’s Department of Computer Science and Linguistics to evaluate large language models’ ability to track the state changes of entities across discourse.
-        In addition, I was a teaching assistant for Brown’s Introduction to Object-Oriented Programming and Computer Science course and serve as the Technology Chair of the Brown University Women in Computer Science organization.
+        This summer, I was an Associate Software Developer Intern at Google. I worked on security warning banners on the Gmail iOS app. </p>
+        <p> I was also a research assistant in Professor Andy van Dam’s Graphics Lab, developing AI-driven learning tools for Dash, a web-based application sponsored by Adobe for interacting with and analyzing multimedia documents.
+        I also conducted research with Dr. Najoung Kim in Boston University’s Department of Computer Science and Linguistics to evaluate large language models’ ability to track the state changes of entities across discourse.
+        In addition, I was a teaching assistant for Brown’s Introduction to Object-Oriented Programming and Computer Science course and serve as the Co-President of the Brown University Women in Computer Science organization.
         </p>
         <p>
         In the past, I was president of my local Technovation Girls chapter,
