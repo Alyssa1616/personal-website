@@ -111,3 +111,13 @@
 @media (max-width: 768px) {
   .details-page { padding: 48px 24px 60px; }
 }
+
+@media (max-width: 768px) {
+  .details-card-top {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .details-meta {
+    justify-content: flex-start;
+  }
+}
