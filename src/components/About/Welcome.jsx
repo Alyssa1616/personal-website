@@ -46,9 +46,9 @@ const Welcome = () => {
         </div>
       )}
       <section className="hero-section">
-        <div className="hero-circle hc1" />
+        {/* <div className="hero-circle hc1" />
         <div className="hero-circle hc2" />
-        <div className="hero-circle hc3" />
+        <div className="hero-circle hc3" /> */}
         <div className={`hero-inner anim ${animate ? "go" : ""}`}>
           <h1 className="hero-name">Alyssa Feinberg</h1>
           <p className="hero-desc">

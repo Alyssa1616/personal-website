@@ -11,8 +11,8 @@ const About = () => {
       <div className="page-wrapper">
         <Welcome />
         <AboutCard />
-        <div className="hero-about-circle" />
-        <div className="about-details-circle" />
+        {/* <div className="hero-about-circle" />
+        <div className="about-details-circle" /> */}
       </div>
       <Details />
       <Skills />

@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <main>
       <section className="projects-page">
-        <div className="projects-circle pc1" />
-        <div className="projects-circle pc2" />
+        {/* <div className="projects-circle pc1" />
+        <div className="projects-circle pc2" /> */}
         <p className="projects-eyebrow">What I've built</p>
         <h1>My Projects</h1>
         <div className="projects-grid">

@@ -65,12 +65,12 @@ const Details = () => {
     <div className="details-page">
       
       
-      <div className="details-circle dc4" />
+      {/* <div className="details-circle dc4" />
       <div className="details-circle dc2" />
       
       <div className="details-circle dc4" />
       <div className="details-circle dc2" />
-      <div className="details-circle dc3" />
+      <div className="details-circle dc3" /> */}
 
       <div className="details-header">
         <p className="details-eyebrow">What I've done</p>

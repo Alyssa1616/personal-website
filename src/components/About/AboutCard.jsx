@@ -6,9 +6,9 @@ import "../../styles/AboutCard.css";
 const AboutCard = () => {
   return (
     <section className="aboutcard-section">
-      <div className="about-circle ac1" />
+      {/* <div className="about-circle ac1" />
       <div className="about-circle ac2" />
-      <div className="about-circle ac3" />
+      <div className="about-circle ac3" /> */}
 
       <div className="aboutcard-inner">
         <div className="aboutcard-pic-wrap">

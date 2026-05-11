@@ -21,9 +21,9 @@ const Skills = () => {
 
   return (
     <div className="skills-page">
-      <div className="skills-circle sc1" data-speed="0.1" />
+      {/* <div className="skills-circle sc1" data-speed="0.1" />
       <div className="skills-circle sc2" data-speed="0.07" />
-      <div className="skills-circle sc3" data-speed="0.04" />
+      <div className="skills-circle sc3" data-speed="0.04" /> */}
 
       <p className="skills-eyebrow">What I work with</p>
       <h1>Skills</h1>
