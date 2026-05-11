@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/Details.css";
+import useScrollFade from "../useScrollFade";
 
 const experiences = [
     {
@@ -61,7 +62,7 @@ const experiences = [
 const Details = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const toggle = (i) => setActiveIndex(activeIndex === i ? null : i);
-
+  useScrollFade();
   return (
     <div className="details-page">
       

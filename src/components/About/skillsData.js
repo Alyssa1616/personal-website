@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import { reactIcon, pythonIcon, javascriptIcon, typescriptIcon, mobxIcon,
     mongodbIcon, htmlIcon, cssIcon, bootstrapIcon, javaIcon, cplusIcon,
     cIcon, swiftIcon, googleIcon, pandasIcon, pytorchIcon, firebaseIcon,
-    gitIcon, flaskIcon, hfIcon, ApiIcon, TuneIcon, MicIcon, TextFieldsIcon,
+    gitIcon, hfIcon, ApiIcon, TuneIcon, MicIcon, TextFieldsIcon,
     MemoryIcon, CodeIcon }
     from './skillsLogos';
 import LibrosaIcon from '../../assets/librosa.png';
