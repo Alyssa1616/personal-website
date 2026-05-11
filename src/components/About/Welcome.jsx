@@ -47,6 +47,7 @@ const Welcome = () => {
       )}
       <section className="hero-section">
         <div className="hero-circle hc1" />
+        <div className="hero-circle hc2" />
         <div className="hero-circle hc3" />
         <div className={`hero-inner anim ${animate ? "go" : ""}`}>
           <h1 className="hero-name">Alyssa Feinberg</h1>
@@ -56,8 +57,8 @@ const Welcome = () => {
           </p>
           <div className={`hero-btns ${showButtons ? "visible" : ""}`}>
             <a href="https://www.linkedin.com/in/alyssa-feinberg-23a38b2a8" className="hero-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:alyssa_feinberg@brown.edu" className="hero-btn">Email Me</a>
-            <a href="/Alyssa_Feinberg_Resume_2025.pdf" className="hero-btn" download>Resume</a>
+            <a href="mailto:alyssasf16@gmail.com" className="hero-btn">Email Me</a>
+            <a href="/Alyssa_Feinberg_Resume_2026.pdf" className="hero-btn" download>Resume</a>
           </div>
         </div>
       </section>

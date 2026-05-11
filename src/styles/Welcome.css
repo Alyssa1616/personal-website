@@ -74,11 +74,18 @@
   background: rgba(91, 155, 181, 0.1);
   top: -160px; right: -100px;
 }
+
 .hc2 {
+  width: 220px;
+  height: 220px;
+  background: rgba(2,6,46,0.05);
+  bottom: -60px;
+  left: -60px; }
+/* .hc2 {
   width: 280px; height: 280px;
   background: rgba(2, 6, 46, 0.04);
   bottom: -60px; left: -60px;
-}
+} */
 
 .hero-inner {
   display: flex; flex-direction: column; align-items: center;
