@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function NavigationBar() {
+  const navLinkClass = ({ isActive }) => isActive ? "nav-link active" : "nav-link";
+
   return (
     <Navbar className="navbar" expand="sm" sticky="top">
       <Container fluid>
@@ -13,8 +15,8 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={NavLink} to="/about" activeClassName="active">About</Nav.Link>
-            <Nav.Link as={NavLink} to="/projects" activeClassName="active">Projects</Nav.Link>
+            <NavLink to="/about" className={navLinkClass}>About</NavLink>
+            <NavLink to="/projects" className={navLinkClass}>Projects</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
