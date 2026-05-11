@@ -1,4 +1,4 @@
-import { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10 } from "../../assets/projects/projects"
+import { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14 } from "../../assets/projects/projects"
 
 const projects = [
     {
@@ -16,6 +16,12 @@ const projects = [
       imageUrl: image2,
       webLink: "https://brown-wics.github.io/website/",
       githubLink: 'https://github.com/Brown-WiCS/website',
+    },
+    {
+      title: 'Virtual IP/TCP Stack',
+      description: "Built a virtual networking stack in Go implementing a custom IPv4 layer and an RFC-compliant TCP protocol from scratch. Implemented routing with RIP, packet forwarding, reliable data transfer, retransmissions, and connection state management over the virtual IP layer.",
+      imageUrl: image12,
+      skills: "Go | Wireshark | Socket Programming | Multithreading | Architecture Design",
     },
     {
       title: 'Code Models Entity Tracking Research',
@@ -45,6 +51,27 @@ const projects = [
       imageUrl: image6,
       webLink: "https://www.congressionalappchallenge.us/22-ma04/",
       githubLink: 'https://github.com/Alyssa1616/CommunAphasia'
+    },
+    {
+      title: 'Beat Speech',
+      description: "Created an app using Swift and Firebase to help children with speech delays improve their speech production through music therapy techniques; collaborated with the Institute for Music and Neurologic Function.",
+      imageUrl: image11,
+      skills: "iOS | Xcode | Swift | Firebase",
+      webLink: "https://www.technovation.org/blogs/2023-finalists-regional-winners/#:~:text=Beat%20Speech%2C%20by%20team%20Newton%C2%A0",
+    },
+    {
+      title: 'DNS Resolver',
+      description: "Built a DNS resolver in C++ capable of performing both recursive and iterative DNS queries from scratch. Implemented a UDP server to handle real DNS requests using low-level socket programming and DNS packet processing.",
+      skills: "C++ | Socket Programming | Systems Programming | Protocol Design",
+      imageUrl: image13,
+      githubLink: "https://github.com/alyssaf16/dns-resolver.git",
+    },
+    {
+      title: 'First Impression Evaluator',
+      description: "Built a multimodal deep learning model to predict personality traits from short speaking videos using both audio and visual features from the ChaLearn First Impressions V2 dataset. Combined a pretrained 3D CNN, custom audio CNN, and transformer encoder to learn spatiotemporal and audio relationships for predicting five personality scores, and developed a web interface for recording videos and displaying predicted personality scores.",
+      skills: "Python | PyTorch | OpenCV | Flask | FFmpeg | torchaudio | torchvision | NumPy | REST APIs",
+      imageUrl: image14,
+      githubLink: "https://github.com/alyssaf16/personality-prediction.git",
     },
     {
       title: 'Shell',

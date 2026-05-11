@@ -8,5 +8,9 @@ import image7 from './shell.png';
 import image8 from './othello.png';
 import image9 from './blackjack.png';
 import image10 from './questions.png';
+import image11 from './beatspeech.png';
+import image12 from './tcpip.png';
+import image13 from './firstimpressions.png';
+import image14 from './dnsresolver.png';
 
-export { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10 }
+export { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14 }

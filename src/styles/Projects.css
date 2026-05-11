@@ -111,6 +111,12 @@
   white-space: nowrap;
 }
 
+.small-image .project-image {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+}
+
 .github-link:hover { background-color: #575757; color: white; }
 .github-link:active { background-color: #181818; }
 

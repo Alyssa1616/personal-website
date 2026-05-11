@@ -21,6 +21,7 @@ const Projects = () => {
               imageUrl={project.imageUrl}
               webLink={project.webLink}
               githubLink={project.githubLink}
+              cardClass={index === 7 ? "small-image" : ""}
             />
           ))}
         </div>

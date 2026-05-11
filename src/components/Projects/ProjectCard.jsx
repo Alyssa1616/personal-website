@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ProjectCard = ({ title, description, skills, imageUrl, webLink, githubLink }) => {
+const ProjectCard = ({ title, description, skills, imageUrl, webLink, githubLink, cardClass }) => {
   return (
-    <div className="project-card">
+     <div className={`project-card ${cardClass || ""}`}>
       <img src={imageUrl} alt={title} className="project-image" />
       <h3>{title}</h3>
       <p className='skill-list'>{skills}</p>
