@@ -7,7 +7,7 @@ const ContactButtons = () => {
       <a href="https://www.linkedin.com/in/alyssa-feinberg-23a38b2a8" className="button linkedin-button" target="_blank" rel="noopener noreferrer">
         LinkedIn
       </a>
-      <a href="mailto:alyssa_feinberg@brown.edu" className="button email-button">
+      <a href="mailto:alyssasf16@gmail.com" className="button email-button">
         Email Me
       </a>
       <a href="/Alyssa_Feinberg_Resume_2025.pdf" className="button download-button" download>

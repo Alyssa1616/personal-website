@@ -1,50 +1,122 @@
-.profile-pic {
-    width: 270px;
-    height: 330px;
-    margin-bottom: 20px;
-    margin-right: 15px;
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 4rem;
-    color: #02062e;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-}
+/* ─── SPLASH ─────────────────────────────────── */
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    color: #555;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 90%;
+.splash {
+  position: fixed;
+  inset: 0;
+  background: #02062e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
 }
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.welcome-page h1 {
+.splash.splash-hidden { opacity: 0; visibility: hidden; }
+.splash-name {
   font-family: 'Poppins', sans-serif;
-  font-size: 4rem;
-  color: #02062e;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 2.8rem; font-weight: 700; color: #eaf4fb;
+  opacity: 0; animation: splashFade 0.6s 0.2s ease forwards;
+}
+.splash-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 1.8rem; color: #5b9bb5; margin-top: 6px;
+  opacity: 0; animation: splashFade 0.6s 0.5s ease forwards;
+}
+.splash-bar-wrap {
+  width: 160px; height: 2px;
+  background: rgba(91, 155, 181, 0.2);
+  border-radius: 2px; margin-top: 32px; overflow: hidden;
+  opacity: 0; animation: splashFade 0.3s 0.7s ease forwards;
+}
+.splash-bar {
+  height: 100%; width: 0%; background: #5b9bb5;
+  border-radius: 2px; animation: splashLoad 1.2s 0.8s ease forwards;
+}
+@keyframes splashFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes splashLoad {
+  from { width: 0%; } to { width: 100%; }
+}
+
+/* ─── ENTRANCE ───────────────────────────────── */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.anim { opacity: 0; }
+.anim.go { animation: fadeUp 0.6s ease forwards; }
+
+/* ─── HERO ───────────────────────────────────── */
+
+.hero-section {
+  min-height: calc(100vh - 72px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 60px 48px;
+  position: relative;
   text-align: center;
-  animation: float 3s ease-in-out infinite;
+  background: #d6edf7;
+}
+
+/* Parallax circles */
+.hero-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
+}
+.hc1 {
+  width: 500px; height: 500px;
+  background: rgba(91, 155, 181, 0.1);
+  top: -160px; right: -100px;
+}
+.hc2 {
+  width: 280px; height: 280px;
+  background: rgba(2, 6, 46, 0.04);
+  bottom: -60px; left: -60px;
+}
+
+.hero-inner {
+  display: flex; flex-direction: column; align-items: center;
+  max-width: 640px; width: 100%;
+  position: relative; z-index: 1;
+}
+.hero-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.5rem; font-weight: 700; color: #02062e;
+  line-height: 1.05; margin-bottom: 20px; text-align: center;
+}
+.hero-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem; font-weight: 300; color: #555;
+  line-height: 1.75; margin-bottom: 36px; max-width: 480px;
+  min-height: 2em; text-align: center;
+}
+.welcome-cursor {
+  display: inline-block; width: 2px; height: 1.1em;
+  background: #5b9bb5; margin-left: 2px; vertical-align: text-bottom;
+  animation: blink 0.85s step-end infinite;
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+.hero-btns {
+  display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  opacity: 0; transition: opacity 0.6s ease;
+}
+.hero-btns.visible { opacity: 1; }
+.hero-btn {
+  text-decoration: none; padding: 10px 22px; border-radius: 6px;
+  font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600;
+  background: rgb(123, 192, 215); color: white; border: none;
+  transition: background 0.2s;
+}
+.hero-btn:hover { background: rgb(99, 155, 173); }
+
+@media (max-width: 768px) {
+  .hero-name { font-size: 3rem; }
+  .hero-section { padding: 48px 24px; }
 }

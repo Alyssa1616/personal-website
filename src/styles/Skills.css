@@ -1,49 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .skills-page {
-    /* background-color: #f4f4f4; */
-    padding: 20px;
-    text-align: center;
+  background: #02062e; font-family: 'Poppins', sans-serif;
+  padding: 72px 24px 160px; text-align: center;
+  position: relative; overflow: hidden; width: 100%;
 }
 
+/* Skills circles — top-left large, bottom-right medium, center-right tiny */
+.skills-circle { position: absolute; border-radius: 50%; pointer-events: none; will-change: transform; }
+.sc1 { width: 380px; height: 380px; background: rgba(91,155,181,0.09); top: -80px; left: -100px; }
+.sc2 { width: 200px; height: 200px; background: rgba(91,155,181,0.07); bottom: -60px; right: -50px; }
+.sc3 { width: 120px; height: 120px; background: rgba(91,155,181,0.05); top: 40%; right: 10%; }
+
+.skills-eyebrow {
+  font-family: 'Poppins', sans-serif; font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.22em; text-transform: uppercase; color: #5b9bb5;
+  margin-bottom: 10px; position: relative; z-index: 1;
+}
 .skills-page h1 {
-    font-size: 30px;
-    padding-bottom: 25px;
+  font-family: 'Poppins', sans-serif; font-size: 2.4rem; font-weight: 700;
+  color: #eaf4fb; text-align: center; margin-bottom: 36px; line-height: 1.1;
+  position: relative; z-index: 1;
 }
-
-.skill-category h2 {
-    margin-bottom: 30px;
-    font-size: 20px;
-}
+.skills-page h1 em { font-style: normal; color: #5b9bb5; }
 
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 12px; max-width: 1100px; margin: 0 auto; position: relative; z-index: 1;
 }
-
 .skill-item {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  display: flex; align-items: center; gap: 8px; padding: 10px 18px;
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(91,155,181,0.25);
+  border-radius: 20px; transition: all 0.2s ease; cursor: default;
 }
-
 .skill-item:hover {
-    transform: translateY(-5px);
+  transform: translateY(-3px); background: rgba(91,155,181,0.15);
+  border-color: #5b9bb5; box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
+.skill-icon { display: flex; align-items: center; font-size: 1.1rem; color: #7ec8e0; flex-shrink: 0; }
+.skill-name { font-family: 'Poppins', sans-serif; font-size: 0.88rem; font-weight: 600; color: #c8e6f4; white-space: nowrap; }
 
-.skill-icon {
-    font-size: 1rem;
-    margin-right: 10px;
-    margin-left: -3px;
-    margin-bottom: 3px;
-    color: #007bff;
-}
-
-.skill-name {
-    font-size: 1rem;
-    font-weight: bold;
-}
+@media (max-width: 768px) { .skills-page { padding: 48px 24px 60px; } }

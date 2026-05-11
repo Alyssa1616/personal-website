@@ -1,13 +1,22 @@
-.welcome {
-    background-color: lightblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+main {
+  margin-top: 72px;
+  overflow-x: hidden;
+  overflow-anchor: none;
 }
 
-.details {
-   background-color: #02062e;
+html, body {
+  margin: 0; padding: 0;
+  background-color: #d6edf7;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-.skills {
-    min-height: auto;
-    background-color: lightblue;
-    padding: 40px;
+section { display: block; }
+
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
 }

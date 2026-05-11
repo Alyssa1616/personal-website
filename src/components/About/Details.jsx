@@ -1,28 +1,117 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/Details.css";
-import ContactButtons from "./ContactButtons";
+
+const experiences = [
+  {
+    role: "Associate SWE Intern · Google",
+    org: "New York, NY",
+    year: "Summer '24",
+    tag: "Industry",
+    tagClass: "tag-i",
+    desc: "Built security warning banners for the Gmail iOS app — a feature shipped to millions of users. Worked end-to-end from design through QA on a tight production timeline.",
+    chips: ["iOS / Swift", "Security", "Production-scale"],
+  },
+  {
+    role: "Research Assistant · van Dam Graphics Lab",
+    org: "Brown University · Sponsored by Adobe",
+    year: "2023–24",
+    tag: "Research",
+    tagClass: "tag-r",
+    desc: "Developed AI-driven learning tools for Dash, Adobe's platform for interacting with and analyzing multimedia documents.",
+    chips: ["AI / ML", "Adobe Dash", "HCI", "Web Dev"],
+  },
+  {
+    role: "Research Assistant · Kim Lab",
+    org: "Boston University · CS & Linguistics",
+    year: "2023",
+    tag: "Research",
+    tagClass: "tag-r",
+    desc: "Evaluated LLMs' ability to track entity state changes across discourse — research at the intersection of NLP and linguistics.",
+    chips: ["NLP", "LLMs", "Linguistics", "Evaluation"],
+  },
+  {
+    role: "Teaching Assistant · CS0200",
+    org: "Brown University · Intro to OOP",
+    year: "2023–24",
+    tag: "Teaching",
+    tagClass: "tag-t",
+    desc: "Supported students learning Java and CS fundamentals. Held office hours, graded assignments, and helped debug a truly heroic number of for-loops.",
+    chips: ["Java", "OOP", "Mentorship"],
+  },
+  {
+    role: "Web Intern · LEX Language Project",
+    org: "Accessibility & Inclusivity",
+    year: "2022",
+    tag: "Community",
+    tagClass: "tag-c",
+    desc: "Redesigned the organization's website to improve accessibility and inclusivity.",
+    chips: ["Web Design", "Accessibility"],
+  },
+  {
+    role: "Chapter President · Technovation Girls",
+    org: "Local chapter leadership",
+    year: "2020–22",
+    tag: "Community",
+    tagClass: "tag-c",
+    desc: "Led teams of young women to design and build their own apps, organized coding workshops, and personally built two language-learning apps.",
+    chips: ["Leadership", "App Dev", "Language Learning", "Mentorship"],
+  },
+];
 
 const Details = () => {
-    return (
-      <div className="details-page">
-        <h1>About Me!</h1>
-        <p>
-        This summer, I was an Associate Software Developer Intern at Google. I worked on security warning banners on the Gmail iOS app. </p>
-        <p> I was also a research assistant in Professor Andy van Dam’s Graphics Lab, developing AI-driven learning tools for Dash, a web-based application sponsored by Adobe for interacting with and analyzing multimedia documents.
-        I also conducted research with Dr. Najoung Kim in Boston University’s Department of Computer Science and Linguistics to evaluate large language models’ ability to track the state changes of entities across discourse.
-        In addition, I was a teaching assistant for Brown’s Introduction to Object-Oriented Programming and Computer Science course and serve as the Co-President of the Brown University Women in Computer Science organization.
-        </p>
-        <p>
-        In the past, I was president of my local Technovation Girls chapter,
-        where I developed several apps to address issues in the community, including two apps that assist with language acquisition.
-        In addition, I led teams of young women to create their own apps, and organized workshops to teach club members coding.
-        I also worked as an intern at the LEX Language Project, where I helped redesign their website to increase accessibility and inclusivity.   
-        </p>
-        <p>In my free time, I love to sing, listen to music, and read (especially mysteries!).
-            I also enjoy taking aimless walks, traveling, and curling!</p>
-        <ContactButtons/>
+  const [activeIndex, setActiveIndex] = useState(null);
+  const toggle = (i) => setActiveIndex(activeIndex === i ? null : i);
+
+  return (
+    <div className="details-page">
+      
+      
+      <div className="details-circle dc4" />
+      <div className="details-circle dc2" />
+      
+      <div className="details-circle dc4" />
+      <div className="details-circle dc2" />
+      <div className="details-circle dc3" />
+
+      <div className="details-header">
+        <p className="details-eyebrow">What I've done</p>
+        <h2 className="details-title">Experience</h2>
       </div>
-    );
-  };
-  
+
+      <div className="details-track">
+        <div className="details-line" />
+        {experiences.map((exp, i) => (
+          <div
+            key={i}
+            className={`details-item ${activeIndex === i ? "active" : ""}`}
+            onClick={() => toggle(i)}
+          >
+            <div className="details-dot" />
+            <div className="details-card">
+              <div className="details-card-top">
+                <div className="details-role">{exp.role}</div>
+                <div className="details-meta">
+                  <span className="details-year">{exp.year}</span>
+                  <span className={`details-tag ${exp.tagClass}`}>{exp.tag}</span>
+                </div>
+              </div>
+              <div className="details-org">{exp.org}</div>
+              {/* Always rendered, CSS controls visibility */}
+              <div className="details-body">
+                <p className="details-desc">{exp.desc}</p>
+                <div className="details-chips">
+                  {exp.chips.map((chip, j) => (
+                    <span key={j} className="details-chip">{chip}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="details-hint">click any role to expand</p>
+    </div>
+  );
+};
+
 export default Details;
