@@ -11,7 +11,6 @@ export { default as javaIcon }from '@iconify/icons-logos/java';
 export { default as cIcon }from '@iconify/icons-logos/c';
 export { default as cplusIcon }from '@iconify/icons-logos/c-plusplus';
 export { default as swiftIcon }from '@iconify/icons-logos/swift';
-export { default as flaskIcon }from '@iconify/icons-logos/flask';
 export { default as ApiIcon} from '@mui/icons-material/Api';
 export { default as googleIcon } from '@iconify/icons-logos/google-icon';
 export { default as hfIcon } from '@iconify/icons-noto-v1/hugging-face';
