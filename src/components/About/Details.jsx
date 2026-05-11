@@ -2,14 +2,32 @@ import React, { useState } from "react";
 import "../../styles/Details.css";
 
 const experiences = [
-  {
-    role: "Associate SWE Intern · Google",
-    org: "New York, NY",
-    year: "Summer '24",
+    {
+    role: "Google · Software Engineering Intern",
+    org: "Cambridge, MA",
+    year: "May 2026 - Aug 2026",
     tag: "Industry",
     tagClass: "tag-i",
     desc: "Built security warning banners for the Gmail iOS app — a feature shipped to millions of users. Worked end-to-end from design through QA on a tight production timeline.",
     chips: ["iOS / Swift", "Security", "Production-scale"],
+  },
+  {
+    role: "Google · Associate Software Developer Intern",
+    org: "Sunnyvale, CA",
+    year: "May 2025 - Aug 2025",
+    tag: "Industry",
+    tagClass: "tag-i",
+    desc: "Built security warning banners for the Gmail iOS app — a feature shipped to millions of users. Worked end-to-end from design through QA on a tight production timeline.",
+    chips: ["iOS / Swift", "Security", "Production-scale"],
+  },
+  {
+    role: "Computer Science Department at Brown University · Teaching Assistant",
+    org: "Providence, RI",
+    year: "2023–24",
+    tag: "Teaching",
+    tagClass: "tag-t",
+    desc: "Supported students learning Java and CS fundamentals. Held office hours, graded assignments, and helped debug a truly heroic number of for-loops.",
+    chips: ["Java", "OOP", "Mentorship"],
   },
   {
     role: "Research Assistant · van Dam Graphics Lab",
