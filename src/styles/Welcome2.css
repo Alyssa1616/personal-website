@@ -1,0 +1,50 @@
+.profile-pic {
+    width: 270px;
+    height: 330px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: #02062e;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.welcome-page h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  color: #02062e;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+}
